@@ -1,17 +1,17 @@
 <!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>防抖与节流 | Ga.X个人博客</title><meta name="keywords" content="防抖节流"><meta name="author" content="Ga.x"><meta name="copyright" content="Ga.x"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="防抖与节流本质上是优化高频率执行代码的一种手段    如：浏览器的 resize、scroll、keypress、mousemove 等事件在触发时，会不断地调用绑定在事件上的回调函数，极大地浪费资源，降低前端性能    为了优化体验，需要对这类事件进行调用次数的限制，对此我们就可以采用throttle（防抖）和debounce（节流）的方式来减少调用频率 定义：  节流: n 秒内只运行一次，若">
 <meta property="og:type" content="article">
 <meta property="og:title" content="防抖与节流">
-<meta property="og:url" content="https://blog.dididididdii.xyz/48515.html">
+<meta property="og:url" content="https://blog.gadii.top/48515.html">
 <meta property="og:site_name" content="Ga.X个人博客">
 <meta property="og:description" content="防抖与节流本质上是优化高频率执行代码的一种手段    如：浏览器的 resize、scroll、keypress、mousemove 等事件在触发时，会不断地调用绑定在事件上的回调函数，极大地浪费资源，降低前端性能    为了优化体验，需要对这类事件进行调用次数的限制，对此我们就可以采用throttle（防抖）和debounce（节流）的方式来减少调用频率 定义：  节流: n 秒内只运行一次，若">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://blog.dididididdii.xyz/img/eigth.webp">
+<meta property="og:image" content="https://blog.gadii.top/img/eigth.webp">
 <meta property="article:published_time" content="2022-09-30T08:00:44.000Z">
 <meta property="article:modified_time" content="2022-09-30T09:03:09.111Z">
 <meta property="article:author" content="Ga.x">
 <meta property="article:tag" content="防抖节流">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://blog.dididididdii.xyz/img/eigth.webp"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://blog.dididididdii.xyz/48515"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+<meta name="twitter:image" content="https://blog.gadii.top/img/eigth.webp"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://blog.gadii.top/48515"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
   root: '/',
   algolia: undefined,
   localSearch: undefined,
